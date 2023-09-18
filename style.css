@@ -13,6 +13,7 @@ body
   transition: background-color 1s ease;
   min-height: 100vh;
   background: linear-gradient(180deg, rgba(1,19,20,0.9864320728291317) 0%, rgba(0,212,255,1) 100%);
+  z-index: -1;
 }
 
 header
@@ -61,6 +62,8 @@ ul
   letter-spacing: 2px;
 }
 
+
+
 .section
 {
   position: relative;
@@ -80,6 +83,8 @@ ul
   height: 100px;
   background: linear-gradient(to top,#1c0522,transparent);
   z-index: 1000;
+  transition: all 10000s linear;
+  transition-duration: 1000s;
 }
 
 .section img
@@ -110,17 +115,22 @@ ul
   z-index: 10;
 }
 
+.section img#mountainb
+{
+  z-index: 9;
+}
 
 #exp
 {
   position:absolute ;
   text-decoration: none;
   border-radius: 40px;
-  display: inline-block;
   background: #9a9bd6;
   color: #2b1055;
   font-size: 1.2em;
   padding: 8px;
+  transition: all 1s ease!important;
+  
 }
 
 
@@ -128,8 +138,9 @@ ul
 {
   position: relative;
   padding: 100px;
-  background: #1c0522;
   background-color: #1c0522;
+  padding-bottom: 10000px;
+  transition: all 0.2s linear;
 }
 
 .secc h2
@@ -148,7 +159,7 @@ ul
 @media screen and (orientation: landscape){
   body
   {
-    font-size: 100%;
+    font-size: 90%;
   }
   header .dropdown
   {
@@ -182,13 +193,13 @@ ul
 
   #stars
   {
-    z-index: -2;
+    z-index: -3;
   }
 
   #moon
   {
-    position: fixed;
-    z-index: -1;
+    position: fixed;  
+    
   }
 }
 

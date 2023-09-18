@@ -52,11 +52,12 @@ a
   border-radius: 20px;
 }
 
-a:hover,
+a:hover
 {
   background: #ffff;
   color: #2b1055;
 }
+
 section
 {
   position: relative;
@@ -137,5 +138,5 @@ section img#mountainf
 
 
 
-font-family: 'Poppins', sans-serif;
+/*font-family: 'Poppins', sans-serif;
 {font-family: 'Exo 2', sans-serif;}
